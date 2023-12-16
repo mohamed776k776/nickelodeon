@@ -10,5 +10,6 @@ void setup() {
 
 void loop() {
   analogWrite(driver_speed, (analogRead(pot)/16));
+  serial.println(analogRead(pot)/16);
   delay(50);
 }
